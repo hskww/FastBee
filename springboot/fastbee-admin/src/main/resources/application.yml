@@ -29,7 +29,7 @@ fastbee:
 
 # 开发环境配置
 server:
-  port: 8080                # 服务器的HTTP端口，默认为8080
+  port: 9088                # 升级改造后统一端口（908X 段），避开本机 8080 占用；原默认 8080
   servlet:
     context-path: /         # 应用的访问路径
   tomcat:
@@ -38,11 +38,11 @@ server:
     threads:
       max: 800              # tomcat最大线程数，默认为200
       min-spare: 100        # Tomcat启动初始化的线程数，默认值10
-  # 基于netty的服务器
+  # 基于netty的服务器（端口统一规划到 908X 段）
   broker:
     broker-node: node1
-    port: 1883
-    websocket-port: 8083
+    port: 9082
+    websocket-port: 9083
     websocket-path: /mqtt
     keep-alive: 70           # 默认的全部客户端心跳上传时间
 
