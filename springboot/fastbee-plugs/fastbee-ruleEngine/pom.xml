@@ -19,13 +19,21 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.codehaus.groovy</groupId>
+            <groupId>org.apache.groovy</groupId>
             <artifactId>groovy</artifactId>
+            <version>${groovy.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kohsuke</groupId>
             <artifactId>groovy-sandbox</artifactId>
             <version>1.34.2</version>
+            <exclusions>
+                <!-- 排除旧版 codehaus groovy，统一使用 org.apache.groovy 4.x（JDK 25 兼容） -->
+                <exclusion>
+                    <groupId>org.codehaus.groovy</groupId>
+                    <artifactId>groovy</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>junit</groupId>

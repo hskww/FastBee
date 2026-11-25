@@ -36,6 +36,7 @@
         <justAuth.version>1.16.5</justAuth.version>
         <forest.version>1.5.36</forest.version>
         <lombok.version>1.18.48</lombok.version>
+        <groovy.version>4.0.33</groovy.version>
         <rocketmq.version>2.2.1</rocketmq.version>
         <hutool.version>5.8.20</hutool.version>
         <mapstruct.version>1.6.3</mapstruct.version>
