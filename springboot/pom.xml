@@ -35,10 +35,10 @@
         <jwt.version>0.9.1</jwt.version>
         <justAuth.version>1.16.5</justAuth.version>
         <forest.version>1.5.36</forest.version>
-        <lombok.version>1.18.22</lombok.version>
+        <lombok.version>1.18.48</lombok.version>
         <rocketmq.version>2.2.1</rocketmq.version>
         <hutool.version>5.8.20</hutool.version>
-        <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <mapstruct.version>1.6.3</mapstruct.version>
         <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
         <mybatis-plus-generator.version>3.5.3.1</mybatis-plus-generator.version>
         <dynamic-datasource.version>4.3.1</dynamic-datasource.version>
