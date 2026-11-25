@@ -12,7 +12,7 @@ services:
     image: mysql:5.7
     container_name: mysql
     ports:
-      - 3306:3306
+      - 3307:3306
     privileged: true
     networks:
       network:
@@ -37,7 +37,7 @@ services:
     image: redis:7.0.0
     container_name: redis
     ports:
-      - 6379:6379
+      - 6380:6379
     privileged: true
     networks:
       network:
@@ -51,10 +51,10 @@ services:
     image: openjdk:8-jre
     container_name: java
     ports:
-      - 8080:8080
-      - 1883:1883
-      - 8083:8083
-      - 5061:5061/udp
+      - 9088:9088
+      - 9082:9082
+      - 9083:9083
+      - 9086:9086/udp
     privileged: true
     networks:
       network:
@@ -77,8 +77,8 @@ services:
     image: nginx:stable
     container_name: nginx
     ports:
-      - 80:80
-      - 443:443
+      - 9080:80
+      - 9084:443
     privileged: true
     networks:
       network:
@@ -98,8 +98,8 @@ services:
     privileged: true
     restart: always
     ports:
-      - 8082:80
-      - 8443:443
+      - 9085:80
+      - 9087:443
       - 554:554
       - 1935:1935
       - 8000:8000
